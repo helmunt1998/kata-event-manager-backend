@@ -1,0 +1,3 @@
+INSERT INTO EVENT (NAME, DESCRIPTION, DATE, TIME, LOCATION) VALUES ('Java User Group', 'Discuss Java 9', '2017-10-25', '10:30:00', 'JavaLand');
+INSERT INTO EVENT (NAME, DESCRIPTION, DATE, TIME, LOCATION) VALUES ('Spring User Group', 'Discuss Spring 5', '2017-10-26', '10:30:00', 'SpringLand');
+INSERT INTO EVENT (NAME, DESCRIPTION, DATE, TIME, LOCATION) VALUES ('Java User Helm', 'Discuss Java 23', '2025-10-25', '09:45:00', 'TimeLand');
