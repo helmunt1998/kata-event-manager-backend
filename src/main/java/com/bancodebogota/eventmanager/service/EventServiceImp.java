@@ -22,8 +22,7 @@ public class EventServiceImp implements IEventService {
 
     @Override
     public void updateEvent(Event event, Long id) {
-        Event eventToUpdate = eventRepository.findById(id).orElseThrow(null);
-        System.out.println("LLego al update");
+        Event eventToUpdate = eventRepository.findById(id).orElseThrow(IllegalArgumentException::new);
         if(Objects.nonNull(event.getName())) {
             eventToUpdate.setName(event.getName());
         }
@@ -49,7 +48,7 @@ public class EventServiceImp implements IEventService {
 
     @Override
     public Event findById(Long id) {
-        return eventRepository.findById(id).orElseThrow(null);
+        return eventRepository.findById(id).orElse(null);
     }
 
     @Override
